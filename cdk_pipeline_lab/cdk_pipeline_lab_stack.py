@@ -8,7 +8,7 @@ from constructs import Construct
 from aws_cdk import aws_codepipeline as codepipeline
 from aws_cdk import aws_codepipeline_actions as cpactions
 from aws_cdk import pipelines
-from aws_cdk import codepipelines
+# from aws_cdk import codepipelines
 from aws_cdk.pipelines import CodePipeline, CodePipelineSource, ShellStep, ManualApprovalStep
 from cdk_pipeline_lab.my_pipeline_app_stage import MyPipelineAppStage
 
