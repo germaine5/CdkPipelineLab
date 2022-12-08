@@ -20,7 +20,10 @@ class CdkPipelineLabStack(Stack):
         pipeline =  CodePipeline(self, "Pipeline", 
                         pipeline_name="MyPipeline",
                         synth=ShellStep("Synth", 
-                            input=CodePipelineSource.git_hub("germaine5/CdkPipelineLab", "main"),
+                            input=CodePipelineSource.git_hub("germaine5/CdkPipelineLab", "main",
+                                connectionArn='arn:aws:codestar-connections:us-east-1:915879673089:connection/2cde4b6a-c128-49aa-8f90-b7181191c383'
+                            ),
+                            
                             
                             commands=["npm install -g aws-cdk", 
                                 "python -m pip install -r requirements.txt", 
