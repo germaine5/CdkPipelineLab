@@ -21,7 +21,7 @@ class CdkPipelineLabStack(Stack):
                         pipeline_name="MyPipeline",
                         synth=ShellStep("Synth", 
                             input=CodePipelineSource.git_hub("germaine5/CdkPipelineLab", "main",
-                                connectionArn='arn:aws:codestar-connections:us-east-1:915879673089:connection/2cde4b6a-c128-49aa-8f90-b7181191c383'
+                                connection_arn='arn:aws:codestar-connections:us-east-1:915879673089:connection/2cde4b6a-c128-49aa-8f90-b7181191c383'
                             ),
                             
                             
